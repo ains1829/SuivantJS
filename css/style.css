@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "poppins-ligth";
+  src: url("../font/Poppins-Light.ttf");
+}
+:root {
+  --purple: rgb(106, 0, 255) ;
+}
+
+body {
+  font-family: "poppins-ligth";
+}
+
+.content-inscription {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content-inscription .information {
+  width: 20%;
+}
+.content-inscription .information .title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: var(--purple);
+  display: flex;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.content-inscription .information .next-back {
+  margin-top: 10px;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: end;
+}
+.content-inscription .information .next-back span {
+  font-family: "poppins-ligth";
+  width: 80px;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  background: rgba(147, 18, 147, 0.236);
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.content-inscription .information .next-back span:hover {
+  box-shadow: 0px 0px 0px 1px rgba(194, 13, 194, 0.36);
+  background: var(--purple);
+}
+.content-inscription .information .next-back .down-next {
+  display: none;
+}
+.content-inscription .information .next-back .down-previous {
+  display: none;
+}
+.content-inscription .information .first-div {
+  display: none;
+}
+@keyframes animates_show {
+  from {
+    background: red;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+.content-inscription .information .animate {
+  background-color: red;
+  animation: animates_show 0.8s !important;
+}
+.content-inscription .information .active-information {
+  display: contents;
+}
+.content-inscription .information .active-information div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.content-inscription .information .active-information div label {
+  font-size: 13px;
+  color: var(--purple);
+  font-weight: bold;
+}
+.content-inscription .information .active-information div input {
+  padding: 12px;
+  border: none;
+  background: rgba(235, 235, 235, 0.353);
+  outline: none;
+  font-family: "poppins-ligth";
+}
+.content-inscription .information .active-information div select {
+  padding: 12px;
+  border: none;
+  background: rgba(235, 235, 235, 0.353);
+  outline: none;
+  font-family: "poppins-ligth";
+}
+.content-inscription .information .active-information div input[type=submit] {
+  margin-top: 7px;
+  background: #3a3f77;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.content-inscription .img img {
+  width: 600px;
+  height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  .information {
+    width: 80% !important;
+  }
+  .img {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
