@@ -34,3 +34,4 @@ create table date_alea(
     iddate_alea int primary key auto_increment,
     idalea int references alea (idalea)
 );
+conflitTest
