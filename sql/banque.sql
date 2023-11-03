@@ -25,3 +25,8 @@ create table historique(
     moneys float ,
     datechance date
 );
+create table alea(
+    idalea int primary key auto_increment,
+    idcin int references cin (idcin),
+    moneys float
+);
